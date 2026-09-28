@@ -1,0 +1,81 @@
+{
+  "name": "fabric-lineage-workbench",
+  "version": "2.0.0",
+  "description": "Fabric Lineage Workbench custom workload frontend",
+  "homepage": "https://github.com/pmaul87/fabric-lineage-workbench#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pmaul87/fabric-lineage-workbench.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pmaul87/fabric-lineage-workbench/issues"
+  },
+  "scripts": {
+    "start": "npm run start:devServer",
+    "start:devServer": "cross-env NODE_OPTIONS=--max-old-space-size=8192 node ./devServer/run-webpack-with-env.js dev serve --open",
+    "start:devGateway": "node ./devServer/start-devGateway.js",
+    "start:codespace": "cross-env NODE_OPTIONS=--max-old-space-size=8192 node ./devServer/run-webpack-with-env.js dev serve --open --no-hot",
+    "smoke:lineage": "node ./scripts/smoke/lineage-smoke.js",
+    "demo:start": "pwsh ./scripts/Run/StartDemo.ps1",
+    "build:test": "node ./devServer/run-webpack-with-env.js test",
+    "build:prod": "node ./devServer/run-webpack-with-env.js prod",
+    "lint": "eslint --ext .ts,.tsx ./app",
+    "lint:fix": "eslint --ext .ts,.tsx ./app --fix"
+  },
+  "author": "Patrick Maul",
+  "license": "SEE LICENSE IN ../LICENSE",
+  "dependencies": {
+    "@fluentui/react": "^8.110.7",
+    "@fluentui/react-components": "^9.7.2",
+    "@fluentui/react-icons": "2.0.226",
+    "@ms-fabric/workload-client": "^3.1.1",
+    "@reduxjs/toolkit": "^2.6.0",
+    "@types/dagre": "^0.7.54",
+    "@xyflow/react": "^12.10.2",
+    "dagre": "^0.8.5",
+    "history": "^4.9.0",
+    "html-to-image": "^1.11.13",
+    "i18next": "^25.4.1",
+    "i18next-http-backend": "^2.4.2",
+    "jwt-decode": "^3.1.2",
+    "mssql": "^12.2.1",
+    "process": "^0.11.10",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-i18next": "^15.0.1",
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^5.3.4",
+    "uuid": "^11.0.5"
+  },
+  "devDependencies": {
+    "@types/node": "^16.0.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@types/react-router-dom": "^5.3.2",
+    "@typescript-eslint/eslint-plugin": "^8.46.1",
+    "@typescript-eslint/parser": "^8.46.1",
+    "ajv": "^8.12.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^14.0.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.5.1",
+    "dotenv": "^16.4.5",
+    "env-cmd": "^10.1.0",
+    "eslint": "^9.37.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "express-rate-limit": "^8.2.1",
+    "html-webpack-plugin": "^5.5.0",
+    "sass": "^1.79.3",
+    "sass-loader": "^16.0.2",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.2.6",
+    "typescript": "^5.0.4",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.3",
+    "webpack-merge": "^6.0.1"
+  },
+  "overrides": {
+    "lodash": "^4.17.21"
+  }
+}

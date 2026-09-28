@@ -1,0 +1,23 @@
+{
+  "name": "valid-lineage",
+  "selectedNodeId": "column:orders|amount|sm:demo-model",
+  "nodes": [
+    { "nodeId": "sm:demo-model", "displayName": "Demo Model", "entityType": "semantic_model" },
+    { "nodeId": "table:orders", "displayName": "Orders", "entityType": "table", "parentNodeId": "sm:demo-model" },
+    { "nodeId": "column:orders|amount|sm:demo-model", "displayName": "Amount", "entityType": "column", "parentNodeId": "table:orders" },
+    { "nodeId": "measure:orders|total|sm:demo-model", "displayName": "Total", "entityType": "measure", "parentNodeId": "table:orders" }
+  ],
+  "edges": [
+    { "edgeId": "orders-amount", "fromNodeId": "measure:orders|total|sm:demo-model", "toNodeId": "column:orders|amount|sm:demo-model", "edgeType": "dependency" },
+    { "edgeId": "orders-table", "fromNodeId": "sm:demo-model", "toNodeId": "table:orders", "edgeType": "contains" }
+  ],
+  "expectations": {
+    "graphScope": "focused",
+    "graphDisplayMode": "filter",
+    "graphNodeLimit": 25,
+    "graphNodes": 3,
+    "graphEdges": 1,
+    "focusWarning": false,
+    "requiresSelection": false
+  }
+}

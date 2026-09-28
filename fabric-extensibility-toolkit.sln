@@ -1,0 +1,35 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Workload", "Workload", "{A910C122-C074-FF9A-B049-5FFEC2CE183F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "devServer", "devServer", "{2D4F435D-A61F-F1E9-FB51-612A7682A56F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{170D9E1E-0DD8-1C9B-1726-1C2642CA6A26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TmdlSerializerCli", "Workload\devServer\tools\TmdlSerializerCli\TmdlSerializerCli.csproj", "{66788B3C-2110-4E52-1BED-50B0CF752FB8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66788B3C-2110-4E52-1BED-50B0CF752FB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66788B3C-2110-4E52-1BED-50B0CF752FB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66788B3C-2110-4E52-1BED-50B0CF752FB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66788B3C-2110-4E52-1BED-50B0CF752FB8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2D4F435D-A61F-F1E9-FB51-612A7682A56F} = {A910C122-C074-FF9A-B049-5FFEC2CE183F}
+		{170D9E1E-0DD8-1C9B-1726-1C2642CA6A26} = {2D4F435D-A61F-F1E9-FB51-612A7682A56F}
+		{66788B3C-2110-4E52-1BED-50B0CF752FB8} = {170D9E1E-0DD8-1C9B-1726-1C2642CA6A26}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3FF8856F-3B57-4185-B3C4-E653C6B4886E}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,18 @@
+{
+  "name": "orphan-semantic-model",
+  "selectedNodeId": "sm:orphan-model",
+  "nodes": [
+    { "nodeId": "sm:orphan-model", "displayName": "Orphan Model", "entityType": "semantic_model" },
+    { "nodeId": "table:standalone", "displayName": "Standalone Table", "entityType": "table" }
+  ],
+  "edges": [],
+  "expectations": {
+    "graphScope": "focused",
+    "graphDisplayMode": "filter",
+    "graphNodeLimit": 25,
+    "graphNodes": 1,
+    "graphEdges": 0,
+    "focusWarning": true,
+    "requiresSelection": false
+  }
+}

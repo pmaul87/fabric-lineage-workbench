@@ -1,0 +1,34 @@
+{
+  "name": "LineageWorkbench",
+  "version": "1.100",
+  "displayName": "LineageWorkbenchItem_DisplayName",
+  "displayNamePlural": "LineageWorkbenchItem_DisplayName_Plural",
+  "editor": {
+    "path": "/LineageWorkbenchItem-editor"
+  },
+  "icon": {
+    "name": "assets/images/Workload_Icon.png"
+  },
+  "activeIcon": {
+    "name": "assets/images/Workload_Icon.png"
+  },
+  "contextMenuItems": [],
+  "quickActionItems": [],
+  "supportedInMonitoringHub": true,
+  "supportedInDatahubL1": true,
+  "editorTab": {
+    "onDeactivate": "item.tab.onDeactivate",
+    "canDeactivate": "item.tab.canDeactivate",
+    "canDestroy": "item.tab.canDestroy",
+    "onDestroy": "item.tab.onDestroy",
+    "onDelete": "item.tab.onDelete"
+  },
+  "createItemDialogConfig": {
+    "onCreationFailure": {
+      "action": "item.onCreationFailure"
+    },
+    "onCreationSuccess": {
+      "action": "item.onCreationSuccess"
+    }
+  }
+}

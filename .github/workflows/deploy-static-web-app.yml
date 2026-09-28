@@ -1,0 +1,47 @@
+name: Deploy Static Web App
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'Workload/**'
+      - 'website/**'
+      - '.github/workflows/deploy-static-web-app.yml'
+  workflow_dispatch:
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: Workload/package-lock.json
+
+      - name: Install dependencies
+        working-directory: Workload
+        run: npm ci
+
+      - name: Build production frontend
+        working-directory: Workload
+        run: npm run build:prod
+
+      - name: Add website folder content
+        run: |
+          mkdir -p build/Frontend/website
+          cp -R website/. build/Frontend/website/
+
+      - name: Deploy to Azure Static Web Apps
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+          action: upload
+          app_location: build/Frontend
+          skip_app_build: true

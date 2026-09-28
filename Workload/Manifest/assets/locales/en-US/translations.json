@@ -1,0 +1,12 @@
+{
+    "Workload_Display_Name": "Lineage Workbench",
+    "Workload_Full_Display_Name": "Lineage Workbench for Microsoft Fabric",
+    "Workload_Description": "Discover, extract, and govern end-to-end lineage across semantic models, reports, and lakehouse assets.",
+    "Workload_Hub_Slogan": "Automated lineage extraction and requirements-aware impact analysis in one workspace.",
+    "Workload_Hub_GetStarted_1_Title": "Set Up Your First Lineage Scan",    
+    "Workload_Hub_GetStarted_1_Sub_Title": "Create dependencies, deploy notebooks, and extract lineage in minutes",
+    "Workload_Hub_GetStarted_1_Description": "Use guided setup for lakehouse, environment, notebook deployment, and workspace selection. Run extraction jobs and start exploring cross-artifact lineage and requirements.",
+    "LineageWorkbenchItem_DisplayName": "Lineage Workbench",
+    "LineageWorkbenchItem_DisplayName_Plural": "Lineage Workbenches",
+    "LineageWorkbenchItem_Description": "Configure extraction, run multi-workspace lineage scans, and manage impact-driven requirements"
+}

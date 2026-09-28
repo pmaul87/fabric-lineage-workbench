@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Getting started with Lineage Workbench." />
+    <title>Lineage Workbench | Getting Started</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="site-header">
+        <a class="brand-mark" href="index.html">Lineage Workbench</a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="overview.html">Overview</a>
+          <a aria-current="page" href="getting-started.html">Getting Started</a>
+          <a href="walkthrough.html">Walkthrough</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </header>
+
+      <section class="section page-hero">
+        <p class="eyebrow">Getting Started</p>
+        <h1>Setup and local run</h1>
+        <p class="lead page-lead">
+          These are the essentials from the project README for getting the workload running in a Fabric development
+          environment.
+        </p>
+      </section>
+
+      <section class="section two-column-section aligned-start">
+        <div>
+          <p class="eyebrow">Prerequisites</p>
+          <h2>Before you begin</h2>
+          <ul class="bullet-list">
+            <li>Node.js</li>
+            <li>PowerShell 7</li>
+            <li>.NET SDK</li>
+            <li>VS Code</li>
+            <li>Microsoft Fabric tenant and workspace</li>
+            <li>Microsoft Entra app</li>
+          </ul>
+        </div>
+        <figure class="image-placeholder">
+          <div class="placeholder-box">Picture placeholder</div>
+          <figcaption>Replace with an environment or prerequisites image.</figcaption>
+        </figure>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Commands</p>
+          <h2>Setup steps</h2>
+        </div>
+        <div class="timeline-list">
+          <article class="timeline-card">
+            <span class="step-number">1</span>
+            <div>
+              <h3>Run setup</h3>
+              <p>Initialize the workload configuration and supporting resources.</p>
+              <pre class="code-block"><code>cd scripts\Setup
+.\Setup.ps1 -WorkloadName "Org.InsightWorkbench"</code></pre>
+            </div>
+          </article>
+          <article class="timeline-card">
+            <span class="step-number">2</span>
+            <div>
+              <h3>Start development mode</h3>
+              <p>Run the local dev server and gateway, then open the workload in Fabric Workload Hub.</p>
+              <pre class="code-block"><code>cd scripts\Run
+.\StartDevServer.ps1
+.\StartDevGateway.ps1</code></pre>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

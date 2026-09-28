@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Product walkthrough for Lineage Workbench." />
+    <title>Lineage Workbench | Walkthrough</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="site-header">
+        <a class="brand-mark" href="index.html">Lineage Workbench</a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="overview.html">Overview</a>
+          <a href="getting-started.html">Getting Started</a>
+          <a aria-current="page" href="walkthrough.html">Walkthrough</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </header>
+
+      <section class="section page-hero">
+        <p class="eyebrow">Walkthrough</p>
+        <h1>Product flow</h1>
+        <p class="lead page-lead">
+          This page follows the README walkthrough and keeps space for the screenshots you plan to add later.
+        </p>
+      </section>
+
+      <section class="section walkthrough-list">
+        <article class="walkthrough-step">
+          <div class="walkthrough-copy">
+            <p class="eyebrow">Step 1</p>
+            <h2>Set up the extraction environment</h2>
+            <ul class="bullet-list">
+              <li>Select or create a Lakehouse.</li>
+              <li>Select or create an Environment and configure dependencies.</li>
+              <li>Choose workspaces to extract and run the job.</li>
+            </ul>
+          </div>
+          <figure class="image-placeholder wide">
+            <div class="placeholder-box">01-setup-extraction-environment.png</div>
+            <figcaption>Screenshot placeholder for setup.</figcaption>
+          </figure>
+        </article>
+
+        <article class="walkthrough-step">
+          <div class="walkthrough-copy">
+            <p class="eyebrow">Step 2</p>
+            <h2>Open the lineage explorer and select a node</h2>
+            <ul class="bullet-list">
+              <li>Open the explorer panel in the Lineage view.</li>
+              <li>Select a dataset, table, column, report, or visual node.</li>
+              <li>Use the selected node as the context for deeper analysis.</li>
+            </ul>
+          </div>
+          <figure class="image-placeholder wide">
+            <div class="placeholder-box">02-lineage-explorer-node-selection.png</div>
+            <figcaption>Screenshot placeholder for node selection.</figcaption>
+          </figure>
+        </article>
+
+        <article class="walkthrough-step">
+          <div class="walkthrough-copy">
+            <p class="eyebrow">Step 3</p>
+            <h2>Inspect related nodes in detail and graph views</h2>
+            <ul class="bullet-list">
+              <li>Review upstream and downstream dependencies in the detail panel.</li>
+              <li>See the connected nodes highlighted inside the graph.</li>
+              <li>Adjust depth and direction controls to refine the view.</li>
+            </ul>
+          </div>
+          <figure class="image-placeholder wide">
+            <div class="placeholder-box">03-related-nodes-detail-graph.png</div>
+            <figcaption>Screenshot placeholder for graph and detail panel.</figcaption>
+          </figure>
+        </article>
+
+        <article class="walkthrough-step">
+          <div class="walkthrough-copy">
+            <p class="eyebrow">Step 4</p>
+            <h2>Show query steps for columns</h2>
+            <ul class="bullet-list">
+              <li>Open the transformation or query lineage section for a selected column.</li>
+              <li>Inspect the steps that produced or transformed the field.</li>
+              <li>Use this information before making semantic model changes.</li>
+            </ul>
+          </div>
+          <figure class="image-placeholder wide">
+            <div class="placeholder-box">04-query-steps-columns.png</div>
+            <figcaption>Screenshot placeholder for column-level transformation steps.</figcaption>
+          </figure>
+        </article>
+
+        <article class="walkthrough-step">
+          <div class="walkthrough-copy">
+            <p class="eyebrow">Step 5</p>
+            <h2>Manage requirement tickets</h2>
+            <ul class="bullet-list">
+              <li>Create and edit tickets inside the integrated board.</li>
+              <li>Link tickets to lineage nodes for impact-aware planning.</li>
+              <li>Track progress with Kanban columns from Backlog to Done.</li>
+            </ul>
+          </div>
+          <figure class="image-placeholder wide">
+            <div class="placeholder-box">05-requirement-tickets.png</div>
+            <figcaption>Screenshot placeholder for the requirements board.</figcaption>
+          </figure>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

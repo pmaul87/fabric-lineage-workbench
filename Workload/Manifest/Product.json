@@ -1,0 +1,83 @@
+{
+    "name": "Product",
+    "version": "1.100",
+    "displayName": "Workload_Display_Name",
+    "fullDisplayName": "Workload_Full_Display_Name",
+    "description": "Workload_Description",
+    "favicon": "assets/images/Workload_Icon.png",
+    "icon": {
+      "name": "assets/images/Workload_Icon.png"
+    },
+    "homePage": {
+      "learningMaterials": [
+        {
+          "title": "Workload_Hub_GetStarted_1_Title",
+          "introduction": "Workload_Hub_GetStarted_1_Sub_Title",
+          "description": "Workload_Hub_GetStarted_1_Description",
+          "image": "assets/images/Workload_Hub_GetStarted_1.png",
+          "link": "https://aka.ms/get-started-learning-docs"
+        }
+      ],
+      "newSection": {
+        "customActions": [
+        ]},
+        "recommendedItemTypes": [
+          "LineageWorkbench"
+        ]
+    },
+    "createExperience": {
+      "description": "Workload_Description",
+      "cards": [
+        {
+          "title": "LineageWorkbenchItem_DisplayName",
+          "description": "LineageWorkbenchItem_Description",
+          "icon": {
+            "name": "assets/images/Workload_Icon.png"
+          },
+          "icon_small": {
+            "name": "assets/images/Workload_Icon.png"
+          },
+          "availableIn": [
+            "home",
+            "create-hub",
+            "workspace-plus-new",
+            "workspace-plus-new-teams"
+          ],
+          "itemType": "LineageWorkbench",
+          "createItemDialogConfig": {
+            "onCreationFailure": { "action": "item.onCreationFailure" },
+            "onCreationSuccess": { "action": "item.onCreationSuccess" }
+          }
+        }
+      ]
+    },
+    "productDetail": {
+      "publisher": "LineageWorkbench",
+      "slogan": "Workload_Hub_Slogan",
+      "description": "Workload_Description",
+      "image": {
+        "mediaType": 0,
+        "source": "assets/images/Workload_Hub_Banner.png"
+      },
+      "slideMedia": [
+        {
+          "mediaType": 1,
+          "source": "https://www.youtube.com/embed/UNgpBOCvwa8"
+        },
+        {
+          "mediaType": 0,
+          "source": "assets/images/Workload_Hub_SlideMedia_1.png"
+        }
+      ],
+        "supportLink": {
+          "documentation": {"url": "https://github.com/pmaul87/fabric-lineage-workbench/blob/main/README.md"},
+          "certification": {"url": "https://github.com/pmaul87/fabric-lineage-workbench"},
+          "help": {"url": "https://github.com/pmaul87/fabric-lineage-workbench/issues"},
+          "privacy": {"url": "https://privacy.microsoft.com/privacystatement"},
+          "terms": {"url": "https://learn.microsoft.com/en-us/legal/termsofuse"},
+          "license": {"url": "https://github.com/pmaul87/fabric-lineage-workbench/blob/main/LICENSE"}
+      }
+    },
+    "itemJobTypes" :["storeData", "others"],
+    "compatibleItemTypes" : ["Lakehouse"]
+}
